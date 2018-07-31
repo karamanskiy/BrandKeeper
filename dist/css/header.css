@@ -1,0 +1,120 @@
+body {
+  font-family: "RobotoBold", sans-serif;
+  color: #162026;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased; }
+
+a, a:visited, a:focus {
+  text-decoration: none;
+  outline: none; }
+
+input {
+  border: none;
+  outline: none; }
+
+input:focus, textarea:focus {
+  outline: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "RobotoSlabBold", sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul, ol {
+  padding-left: 0; }
+
+li {
+  list-style: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: inherit;
+  text-align: center;
+  font-family: "RobotoSlabBold", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: 0 !important; }
+
+button, input, textarea {
+  outline: none; }
+
+::-moz-selection {
+  background-color: rgba(203, 93, 157, 0.85); }
+
+::selection {
+  background-color: rgba(203, 93, 157, 0.85); }
+
+::-moz-selection {
+  background-color: rgba(203, 93, 157, 0.85); }
+
+.clearfix, .clear {
+  clear: both !important; }
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4); }
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4); }
+
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4); }
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4); }
+
+section {
+  min-width: 319px; }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+section.full-paged {
+  width: 100%;
+  min-width: 940px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  min-height: 690px;
+  max-height: 1080px;
+  height: 100vh; }
+  section.full-paged > div {
+    max-width: 940px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    margin: 0 auto; }
+    section.full-paged > div > div {
+      width: 100%;
+      position: absolute;
+      height: 800px;
+      top: 50%;
+      margin-top: -400px; }
+
+section.s5 > div > div {
+  height: 860px;
+  margin-top: -445px; }
+
+section.s7 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  max-height: 1080px; }

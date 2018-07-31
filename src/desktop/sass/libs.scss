@@ -1,0 +1,186 @@
+@import "vars";
+
+// @import 'src/desktop/libs/flexcroll/flexcrollstyles';
+@import 'src/desktop/libs/mCustomScrollbar/jquery.mCustomScrollbar';
+// @import 'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min';
+@import 'src/desktop/libs/slick/slick-theme-css';
+@import 'src/desktop/libs/nSelect/jquery.nselect';
+@import 'src/desktop/libs/slick/slick-css';
+
+
+
+.arcticmodal-container, .arcticmodal-overlay{	
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.arcticmodal-container{	
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+
+:first-child+html .arcticmodal-container{	height: 100%;}
+
+.arcticmodal-container_i
+{	margin: 0 auto;
+	height: 100%;}
+
+.arcticmodal-container_i2
+{	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: middle;}
+
+#hidden-box, .hidden-box{display: none;}
+// .error-input{	border: 1px solid red;}
+
+
+.arcticmodal-overlay {
+	background-color: rgba(70, 129, 185, .5) !important;
+	opacity: 1 !important;
+}
+
+.arcticmodal-close {
+	width: 80px;
+	height: 80px;
+	background-image: url('../img/close-btn.png');
+	position: absolute;
+	right: -40px;
+	top: -40px;
+	cursor: pointer;
+	transition: all .25s;
+	background-color: #E75DA0;
+	box-shadow: 0 3px 15px rgba(141,158,175,.5);
+	border-radius: 50%;
+	&:hover {
+		background-color: #08B;
+		box-shadow: 0 3px 25px rgba(70,129,185,.8);
+	}
+}
+
+.wrap-modal {
+	position: relative;
+	min-width: 360px;
+	min-height: 350px;
+	background-color: #fff;
+}
+
+
+
+
+// .reviews .bx-controls
+// {	position: absolute;
+// 	top: 300px;
+// 	width: 100%;
+// 	#sld1l, #sld1r
+// 		{position: absolute;}
+// 	#sld1l
+// 		{left: 110px;}
+// 	#sld1r
+// 		{right: 110px;}
+// }
+
+.slick-slide img {margin: 0 10px;}
+.slick-slider .slick-track {background-color: #fff;}
+
+
+.for-nav-slider .slick-current {
+	box-shadow: 0 0 0 4px $pink-color;
+}
+.for-nav-slider .navslider_item {
+	width: 150px;
+	height: 115px;
+	margin: 0 5px;
+	cursor: pointer;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&:hover {box-shadow: 0 0 0 4px $pink-color;}
+}
+
+.for-sect2-slider .slick-prev,
+.inst-slider .slick-prev,
+.for-nav-slider .slick-prev {
+	width: 80px;
+	height: 80px;
+	background-color: #fff;
+	background-image: url('../img/left-arrow-pink.png');
+	box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 50%;
+	z-index: 1;
+	left: -40px;
+	top: -230px;
+	transition: all .25s;
+	&:hover {
+		background-image: url('../img/left-arrow-white.png');
+		background-color: $pink-color;
+	}
+}
+.for-sect2-slider .slick-next,
+.inst-slider .slick-next,
+.for-nav-slider .slick-next {
+	width: 80px;
+	height: 80px;
+	background-color: #fff;
+	background-image: url('../img/right-arrow-pink.png');
+	box-shadow: -2px 2px 8px rgba(0,0,0,.2);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 50%;
+	z-index: 1;
+	right: -40px;
+	top: -230px;
+	transition: all .25s;
+	&:hover {
+		background-image: url('../img/right-arrow-white.png');
+		background-color: $pink-color;
+	}
+}
+.for-sect2-slider .slick-prev:before,
+.for-sect2-slider .slick-next:before,
+.inst-slider .slick-prev:before,
+.inst-slider .slick-next:before,
+.for-nav-slider .slick-prev:before,
+.for-nav-slider .slick-next:before,
+.brand-slider .slick-prev:before,
+.brand-slider .slick-next:before {content: '';}
+
+.for-sect2-slider .slick-next,
+.for-sect2-slider .slick-prev {
+	top: 50%;
+}
+.photo-sldr-modal .wrap-modal .arcticmodal-close {z-index: 2;}
+
+
+.mCSB_inside > .mCSB_container {margin-right: 10px;}
+
+.nselect.nsOrange .nselect__head:after {
+	width: 11px;
+	height: 6px;
+	border: none;
+	background-image: url('../img/strelka-select.png');
+	top: 8px;
+}
+.nselect.nsOrange._checked .nselect__head,
+.nselect.nsOrange .nselect__head {
+	background-color: transparent;
+	color: #fff;
+}
+.nselect .nselect__head SPAN {
+	font-family: $roboto-medium;
+	font-size: 16px;
+}
+.nselect.nsOrange .nselect__head {padding: 1px 26px 1px 7px;}
+.nselect.nsOrange .nselect__list LI._active SPAN {color: $pink-color;}
+.nselect.nsOrange .nselect__list LI SPAN:hover {color: #fff;}
